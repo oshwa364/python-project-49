@@ -6,3 +6,7 @@ build:
 	uv build
 package-install:
 	uv tool install dist/*.whl
+lint:
+	uv run ruff check brain_games
+reinstall:
+	uv tool install --force dist/*.whl

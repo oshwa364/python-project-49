@@ -3,3 +3,4 @@ __pycache__/
 dist/
 .python-version
 .vscode
+.ruff_cache
