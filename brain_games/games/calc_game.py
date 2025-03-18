@@ -1,10 +1,13 @@
-from random import randint, choice
-from brain_games.constants import SIGNS
+from random import choice, randint
+
 import prompt
+
+from brain_games.constants import SIGNS
 
 
 def get_right_answer(number1, sign, number2) -> str:
     return str(eval(f'{number1} {sign} {number2}'))
+
 
 def calc_game() -> tuple:
     sign = choice(SIGNS)

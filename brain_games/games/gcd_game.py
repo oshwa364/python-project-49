@@ -1,6 +1,7 @@
-import prompt
-from random import randint
 from math import gcd
+from random import randint
+
+import prompt
 
 
 def get_right_answer(number1, number2) -> str:
