@@ -1,7 +1,8 @@
 from random import choice, randint
-from brain_games.constants import SIGNS
 
 import prompt
+
+from brain_games.constants import SIGNS
 
 
 def get_right_answer(number1, sign, number2) -> str:
