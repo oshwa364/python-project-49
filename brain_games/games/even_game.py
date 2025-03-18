@@ -1,29 +1,18 @@
 from random import randint
+import prompt
 
 
-def is_even(number):
+def is_even(number) -> bool:
     return True if number % 2 == 0 else False
 
 
-def expected_answer(number):
+def get_right_answer(number) -> str:
     return 'yes' if is_even(number) else 'no'
 
 
-def round():
+def even_game() -> tuple:
     number = randint(1, 100)
     print(f'Question: {number}')
-    answer = input('Your answer: ')
-    return True if expected_answer(number) == answer else False
-
-
-def even_game(name):
-    rounds = 3
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    count = 0
-    while count < rounds:
-        if not round():
-            print(f'Let\'s try again, {name}!')
-            exit()
-        print('Correct!')
-        count += 1
-    print(f'Congratulations, {name}!')
+    answer = prompt.string('Your answer: ')
+    expected_answer = get_right_answer(number)
+    return expected_answer, answer
