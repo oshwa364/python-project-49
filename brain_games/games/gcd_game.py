@@ -10,7 +10,7 @@ def get_right_answer(number1, number2) -> str:
     return str(gcd(number1, number2))
 
 
-def gcd_game() -> tuple:
+def play_gcd_game() -> tuple:
     number1 = randint(*RANGE_GCD)
     number2 = randint(*RANGE_GCD)
     print(f'Question: {number1} {number2}')

@@ -1,4 +1,3 @@
-# Не понимаю, почему ruff так расставляет импорты
 from random import randint
 
 import prompt
@@ -10,7 +9,7 @@ from brain_games.constants import (
 )
 
 
-def progression_game() -> tuple:
+def play_progression_game() -> tuple:
     first_number = randint(*RANGE_FIRST_NUMBER)
     step_of_progression = randint(*RANGE_STEP)
 

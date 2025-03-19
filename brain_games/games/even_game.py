@@ -13,7 +13,7 @@ def get_right_answer(number) -> str:
     return 'yes' if is_even(number) else 'no'
 
 
-def even_game() -> tuple:
+def play_even_game() -> tuple:
     number = randint(*RANGE_ENEV_NUMBERS)
     print(f'Question: {number}')
     answer = prompt.string('Your answer: ')

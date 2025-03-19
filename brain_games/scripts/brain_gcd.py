@@ -2,11 +2,11 @@
 
 from brain_games.constants import GCD_INSTRUCTION
 from brain_games.engine import run_game
-from brain_games.games.gcd_game import gcd_game
+from brain_games.games.gcd_game import play_gcd_game
 
 
 def main():
-    run_game(gcd_game, GCD_INSTRUCTION)
+    run_game(play_gcd_game, GCD_INSTRUCTION)
 
 
 if __name__ == '__main__':

@@ -16,7 +16,7 @@ def get_right_answer(number) -> str:
     return 'yes' if is_prime(number) else 'no'
 
 
-def prime_game():
+def play_prime_game():
     number = randint(*RANGE_PRIME_NUMBERS)
     print(f'Question: {number}')
     answer = prompt.string('Your answer: ')
