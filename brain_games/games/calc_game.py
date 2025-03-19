@@ -2,7 +2,7 @@ from random import choice, randint
 
 import prompt
 
-from brain_games.constants import SIGNS
+from brain_games.constants import SIGNS, RANGE_CALC_NUMBERS
 
 
 def get_right_answer(number1, sign, number2) -> str:
@@ -11,8 +11,8 @@ def get_right_answer(number1, sign, number2) -> str:
 
 def calc_game() -> tuple:
     sign = choice(SIGNS)
-    number1 = randint(1, 25)
-    number2 = randint(1, 10)
+    number1 = randint(*RANGE_CALC_NUMBERS)
+    number2 = randint(*RANGE_CALC_NUMBERS)
     print(f'Question: {number1} {sign} {number2}')
     answer = prompt.string('Your answer: ')
     expected_answer = get_right_answer(number1, sign, number2)

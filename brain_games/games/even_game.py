@@ -1,5 +1,5 @@
 from random import randint
-
+from brain_games.constants import RANGE_ENEV_NUMBERS
 import prompt
 
 
@@ -12,7 +12,7 @@ def get_right_answer(number) -> str:
 
 
 def even_game() -> tuple:
-    number = randint(1, 100)
+    number = randint(*RANGE_ENEV_NUMBERS)
     print(f'Question: {number}')
     answer = prompt.string('Your answer: ')
     expected_answer = get_right_answer(number)

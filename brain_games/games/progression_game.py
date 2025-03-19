@@ -3,12 +3,12 @@ from random import randint
 
 import prompt
 
-from brain_games.constants import LENGTH_OF_PROGRESSION
+from brain_games.constants import LENGTH_OF_PROGRESSION, RANGE_FIRST_NUMBER, RANGE_STEP
 
 
 def progression_game() -> tuple:
-    first_number = randint(1, 20)
-    step_of_progression = randint(2, 15)
+    first_number = randint(*RANGE_FIRST_NUMBER)
+    step_of_progression = randint(*RANGE_STEP)
 
     progression = [first_number + i for i in range
                    (0, LENGTH_OF_PROGRESSION * step_of_progression,

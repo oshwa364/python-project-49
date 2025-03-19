@@ -1,5 +1,6 @@
 from math import gcd
 from random import randint
+from brain_games.constants import RANGE_GCD
 
 import prompt
 
@@ -9,8 +10,8 @@ def get_right_answer(number1, number2) -> str:
 
 
 def gcd_game() -> tuple:
-    number1 = randint(1, 40)
-    number2 = randint(1, 40)
+    number1 = randint(*RANGE_GCD)
+    number2 = randint(*RANGE_GCD)
     print(f'Question: {number1} {number2}')
     answer = prompt.string('Your answer: ')
     expected_answer = get_right_answer(number1, number2)
