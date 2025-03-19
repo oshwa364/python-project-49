@@ -2,7 +2,7 @@ from random import choice, randint
 
 import prompt
 
-from brain_games.constants import SIGNS, RANGE_CALC_NUMBERS
+from brain_games.constants import RANGE_CALC_NUMBERS, SIGNS
 
 
 def get_right_answer(number1, sign, number2) -> str:

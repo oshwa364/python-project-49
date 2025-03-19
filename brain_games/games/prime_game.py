@@ -1,7 +1,8 @@
 from random import randint
-from brain_games.constants import RANGE_PRIME_NUMBERS
 
 import prompt
+
+from brain_games.constants import RANGE_PRIME_NUMBERS
 
 
 def is_prime(number) -> bool:

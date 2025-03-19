@@ -3,7 +3,11 @@ from random import randint
 
 import prompt
 
-from brain_games.constants import LENGTH_OF_PROGRESSION, RANGE_FIRST_NUMBER, RANGE_STEP
+from brain_games.constants import (
+    LENGTH_OF_PROGRESSION,
+    RANGE_FIRST_NUMBER,
+    RANGE_STEP,
+)
 
 
 def progression_game() -> tuple:

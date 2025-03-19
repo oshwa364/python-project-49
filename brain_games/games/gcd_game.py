@@ -1,8 +1,9 @@
 from math import gcd
 from random import randint
-from brain_games.constants import RANGE_GCD
 
 import prompt
+
+from brain_games.constants import RANGE_GCD
 
 
 def get_right_answer(number1, number2) -> str:

@@ -1,6 +1,8 @@
 from random import randint
-from brain_games.constants import RANGE_ENEV_NUMBERS
+
 import prompt
+
+from brain_games.constants import RANGE_ENEV_NUMBERS
 
 
 def is_even(number) -> bool:
