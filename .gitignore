@@ -5,3 +5,4 @@ dist/
 .vscode
 .ruff_cache
 *.cast
+my_questions
