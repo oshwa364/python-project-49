@@ -2,7 +2,7 @@ from random import randint
 
 import prompt
 
-from brain_games.constants import RANGE_ENEV_NUMBERS
+RANGE_EVEN_NUMBERS = (1, 100)
 
 
 def is_even(number) -> bool:
@@ -14,7 +14,7 @@ def get_right_answer(number) -> str:
 
 
 def play_even_game() -> tuple:
-    number = randint(*RANGE_ENEV_NUMBERS)
+    number = randint(*RANGE_EVEN_NUMBERS)
     print(f'Question: {number}')
     answer = prompt.string('Your answer: ')
     expected_answer = get_right_answer(number)

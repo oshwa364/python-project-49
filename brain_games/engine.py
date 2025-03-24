@@ -1,6 +1,6 @@
 import prompt
 
-from brain_games.constants import ROUNDS
+ROUNDS = 3
 
 
 def run_game(game, instruction):

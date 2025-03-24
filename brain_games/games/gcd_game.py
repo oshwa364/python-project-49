@@ -3,7 +3,7 @@ from random import randint
 
 import prompt
 
-from brain_games.constants import RANGE_GCD
+RANGE_GCD = (1, 40)
 
 
 def get_right_answer(number1, number2) -> str:

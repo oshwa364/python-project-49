@@ -2,7 +2,7 @@ from random import randint
 
 import prompt
 
-from brain_games.constants import RANGE_PRIME_NUMBERS
+RANGE_PRIME_NUMBERS = (3, 100)
 
 
 def is_prime(number) -> bool:
